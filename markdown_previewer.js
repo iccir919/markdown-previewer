@@ -1,5 +1,10 @@
 'use strict';
 
+
+marked.setOptions({
+  breaks: true,
+});
+
 const e = React.createElement;
 
 class MarkdownPreviewer extends React.Component {
