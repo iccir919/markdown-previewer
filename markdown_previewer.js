@@ -73,31 +73,35 @@ And here. | Okay. | I think we get it.
   render() {
     return React.createElement(
       "div",
-      { className: "container" },
+      { className: "markdown-previewer" },
       React.createElement(
-        "h3",
-        null,
-        "Input"
+        "div",
+        { className: "editor-container" },
+          React.createElement(
+            "h3",
+            { className: "section-header" },
+            "Input"
+          ),
+          React.createElement("textarea", {
+            id: "editor",
+            onChange: this.handleChange,
+            defaultValue: this.state.value
+          })
       ),
+
       React.createElement(
-        "label",
-        { htmlFor: "editor" },
-        "Enter some markdown"
-      ),
-      React.createElement("textarea", {
-        id: "editor",
-        onChange: this.handleChange,
-        defaultValue: this.state.value
-      }),
-      React.createElement(
-        "h3",
-        null,
-        "Output"
-      ),
-      React.createElement("div", {
-        id: "preview",
-        dangerouslySetInnerHTML: this.getRawMarkup()
-      })
+        "div",
+        { className: "previewer-container" },
+          React.createElement(
+            "h3",
+            { className: "section-header" },
+            "Output"
+          ),
+          React.createElement("div", {
+            id: "preview",
+            dangerouslySetInnerHTML: this.getRawMarkup()
+          })
+      )
     );
   }
 }
