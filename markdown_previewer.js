@@ -73,7 +73,7 @@ And here. | Okay. | I think we get it.
   render() {
     return React.createElement(
       "div",
-      { className: "MarkdownPreviewer" },
+      { className: "container" },
       React.createElement(
         "h3",
         null,

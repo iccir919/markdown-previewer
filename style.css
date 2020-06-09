@@ -1,0 +1,16 @@
+body {
+    background-color: #444;
+}
+
+#app {
+    text-align: center;
+    background-color: white;
+}
+
+.header-title {
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.markdown-previewer{
+    display: flex;
+}
