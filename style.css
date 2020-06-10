@@ -64,11 +64,16 @@ footer a {
 
 @media (min-width: 768px) { 
     .markdown-previewer {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        margin-left: 5em;
+        margin-right: 5em;
     }
-
     textarea {
         height: 75vh;
+    }
+}
+@media (min-width: 992px) { 
+    .markdown-previewer {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
  }

@@ -1,5 +1,8 @@
 # Markdown Previewer
 
+## Live Version
+- [Link to viewable version of the website](https://iccir919.github.io/markdown-previewer/)
+
 ## Project Objective
 
 - [x] User Story #1: I can see a textarea element with a corresponding id="editor".
@@ -14,4 +17,4 @@
 
 - [x] User Story #6: When my markdown previewer first loads, the default markdown in the #editor field should be rendered as HTML in the #preview element.
 
-Optional Bonus (you do not need to make this test pass): My markdown previewer interprets carriage returns and renders them as br (line break) elements.
+- [x] Optional Bonus (you do not need to make this test pass): My markdown previewer interprets carriage returns and renders them as br (line break) elements.
